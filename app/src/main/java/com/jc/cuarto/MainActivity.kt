@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+var x=2
+        Log.i("XXX", " estara ${x in 1..30}")
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
         val adapter = UserListAdapter()
